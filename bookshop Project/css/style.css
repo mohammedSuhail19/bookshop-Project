@@ -1,0 +1,1044 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+/* ::-webkit-scrollbar{ */
+/* display: none; */
+/* } */
+:root {
+    --cairo-font-: 'Cairo', sans-serif;
+}
+
+
+/* navbar start   */
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(27, 27, 27);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 5px #0000000a;
+    position: fixed;
+}
+
+header .logo a {
+    margin-left: 50px;
+    font-family: var(--cairo-font-);
+    color: white;
+    cursor: default;
+    /* font-size: 20px; */
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+header .container .home {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    /* background: rgba(10, 70, 100, 0.8); */
+    justify-content: space-between;
+    margin-right: 50px;
+
+
+
+}
+
+header .container .home li a {
+    font-family: var(--cairo-font-);
+    color: white;
+    cursor: default;
+
+}
+
+header .container .home li a:hover {
+    color: green;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/* finish nav */
+/* start login form  */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.loginForm {
+    display: flex;
+    justify-content: center;
+    /* background: #015f0115; */
+    height: 100vh;
+}
+
+.loginForm form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    /* background: #333; */
+    margin-top: 100px;
+}
+
+.loginForm form h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--cairo-font-);
+
+}
+
+.loginForm form label {
+    /* padding-left: 30px; */
+    font-size: 20px;
+    font-family: var(--cairo-font-);
+
+}
+
+.loginForm form .pass {
+    margin-top: 20px;
+}
+
+.loginForm form input {
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: var(--cairo-font-);
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.loginForm form .submitLogin {
+    margin-top: 30px;
+    background: green;
+    color: #fff;
+}
+
+.loginForm form .submitLogin:hover {
+    transition: all .50s;
+    transform: scale(0.9);
+}
+
+/* finsh login form */
+
+
+/* register form start */
+
+
+/* another way to set footer in bottom */
+/* .register-page  {
+    display: flex;
+    flex-direction: column;
+    row-gap: 200px;
+} */
+
+
+
+.registerForm {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 300px;
+}
+
+.registerForm form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    /* background: #333; */
+}
+
+.registerForm form h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--cairo-font-);
+
+}
+
+.registerForm form label {
+    /* padding-left: 30px; */
+    font-size: 20px;
+    font-family: var(--cairo-font-);
+
+}
+
+.registerForm form .pass {
+    margin-top: 20px;
+}
+
+.registerForm form input {
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: var(--cairo-font-);
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.registerForm form .submitRegister {
+    margin-top: 30px;
+    background: green;
+    color: #fff;
+}
+
+.registerForm form .submitRegister:hover {
+    transition: all .50s;
+    transform: scale(0.9);
+}
+
+/* finsh register */
+/* start homepage */
+.homePage,
+.wrapperHome {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchBooks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    /* background: rgba(183, 237, 253, 0.89); */
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 140%;
+    /* background-attachment: fixed; */
+
+}
+
+.searchBooks .searchContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    /* width: 80%; */
+}
+
+.searchBooks .searchContent h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 35px;
+    font-family: var(--cairo-font-);
+    font-weight: 500;
+}
+
+.searchBooks .searchContent .searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 750px;
+    border-radius: 5px;
+}
+
+.searchBooks .searchContent .searchBox input {
+    width: 100%;
+    border: none;
+
+}
+
+.searchBooks .searchContent .wrapper-searchNumber {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 200px;
+    height: 200px;
+}
+
+.searchBooks .searchContent .wrapper-searchNumber .searchNumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100px;
+}
+
+.searchBooks .searchContent .wrapper-searchNumber .searchNumber i {
+    margin-bottom: -100px;
+}
+
+.aboutLibrary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.aboutLibrary h2 {
+    font-size: 30px;
+    font-family: var(--cairo-font-);
+    font-weight: 400;
+}
+
+.aboutLibrary p {
+    width: 80%;
+    text-align: center;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    background: #f2f2f2;
+
+    height: 300px;
+}
+
+.categories h2 {
+    font-size: 30px;
+    font-family: var(--cairo-font-);
+    font-weight: 400;
+}
+
+.categories .wrapperCat {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories .wrapperCat div {
+    width: 250px;
+    height: 100px;
+    background: #fff;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 25px;
+    font-family: var(--cairo-font-);
+    font-weight: 500;
+
+}
+
+.categories .wrapperCat div a {
+    color: #000;
+}
+
+.categories .wrapperCat div:hover {
+    transition: all 0.5s ease-out;
+}
+
+.lastestBooks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    height: 650px;
+}
+
+.lastestBooks h2 {
+    font-size: 30px;
+    font-family: var(--cairo-font-);
+    font-weight: 400;
+}
+
+.lastestBooks .wrapperCartBooks {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastestBooks .wrapperCartBooks div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 250px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.lastestBooks .wrapperCartBooks div img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.lastestBooks .wrapperCartBooks div h2 {
+    font-size: 20px;
+    font-family: var(--cairo-font-);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.lastestBooks .wrapperCartBooks div p {
+    font-size: 15px;
+    font-family: var(--cairo-font-);
+    font-weight: 400;
+    margin-left: 10px;
+    padding-bottom: 5px;
+
+}
+
+.lastestBooks .wrapperCartBooks div a {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 70px;
+    border-radius: 5px;
+    margin: 10px 10px;
+
+}
+
+
+
+
+/* finsh homepage */
+/* start lastest books  */
+
+
+
+
+.lastestBooks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    height: 650px;
+
+}
+
+.lastestBooks h1 {
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: var(--cairo-font-);
+    font-weight: 400;
+}
+
+.lastestBooks .wrapperCartBooks {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastestBooks .wrapperCartBooks div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 250px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.lastestBooks .wrapperCartBooks div img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.lastestBooks .wrapperCartBooks div h2 {
+    font-size: 20px;
+    font-family: var(--cairo-font-);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.lastestBooks .wrapperCartBooks div p {
+    font-size: 15px;
+    font-family: var(--cairo-font-);
+    font-weight: 400;
+    margin-left: 10px;
+    padding-bottom: 5px;
+
+}
+
+.lastestBooks .wrapperCartBooks div a {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 70px;
+    border-radius: 5px;
+    margin: 10px 10px;
+
+}
+
+/* finsh lastest books   */
+/* start details book */
+.details,
+.wrapperDetails {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* row-gap: 100vh; */
+    /* min-height: 100vh; */
+}
+
+.wrapperDetails .ImgePrice {
+    display: inline-flex;
+    column-gap: 100px;
+    margin-top: 100px;
+
+}
+
+.wrapperDetails .ImgePrice .Imge {
+    min-width: 350px;
+    height: 450px;
+    margin-left: 150px;
+    /* border: 5px solid;  */
+}
+
+.wrapperDetails .ImgePrice .Imge img {
+    min-width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.wrapperDetails .ImgePrice .Price {
+    display: block;
+    min-width: 400px;
+    /* border: 1px solid; */
+}
+
+.wrapperDetails .ImgePrice .Price h2 {
+    font-size: 30px;
+    font-family: var(--cairo-font-);
+    font-weight: 600;
+}
+
+.wrapperDetails .ImgePrice .Price h3 {
+    font-size: 25px;
+    font-family: var(--cairo-font-);
+    font-weight: 500;
+}
+
+.wrapperDetails .ImgePrice .Price span {
+    color: #f00;
+}
+
+.wrapperDetails .ImgePrice .Price .line {
+    width: 650px;
+    height: 2px;
+    background-color: #c2c2c2;
+    border: none;
+}
+
+.wrapperDetails .ImgePrice .Price p {
+    margin: 20px 20px 20px 0px;
+}
+
+.wrapperDetails .ImgePrice .Price a {
+    color: #fff;
+    background: green;
+    padding: 5px 70px;
+    border-radius: 5px;
+}
+
+.wrapperDetails .descriptoinBook {
+    /* margin :top right bottom left */
+    margin: 50px 0px 50px 50px;
+
+}
+
+.wrapperDetails .descriptoinBook h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* finsh details book */
+
+
+
+
+/* start cart  */
+
+.yourCart,
+.mainCart-table {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.yourCart .mainCart-table {
+    align-items: center;
+    min-height: 100vh;
+}
+
+.yourCart .mainCart-table h1 {
+    margin-top: 100px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1100px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr {
+    border-bottom: 2px solid #f2f2f2;
+}
+
+table tr td i {
+    color: #fff;
+    background-color: rgba(255, 0, 0);
+    padding: 7px;
+    border-radius: 5px;
+
+}
+
+.mainCart-table table tr td img {
+    width: 70px;
+    height: 80px;
+
+}
+
+/* tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } */
+
+
+
+/* finsh cart */
+/*start dashboard   */
+.headerSidebar {
+    display: grid;
+    grid-template-columns: 200px auto 100px;
+    /* background: wheat; */
+    /* border: 1px solid; */
+    grid-gap: 10px;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0px 1px 10px #999;
+
+}
+
+.headerSidebar .companyName {
+    min-width: 250px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.headerSidebar div .inputSearch {
+    width: 970px;
+    height: 50px;
+    font-size: 17px;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    background: #4b4a4ac9;
+    border: none;
+
+
+}
+
+.headerSidebar div .inputSearch::placeholder {
+    padding-left: 10px;
+}
+
+.headerSidebar div a {
+    text-decoration: none;
+    color: #a7a3a3;
+    font-size: 15px;
+}
+
+
+/* main {
+	display: flex;
+} */
+
+.sidebar {
+    /* background-color: #f2f2f2; */
+    background: rgb(231, 236, 248);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 10px;
+    font-weight: 800;
+    min-width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 3rem;
+}
+
+.sidebar a {
+    color: #333;
+}
+
+/* .sidebar a:hover,.sidebar  a:active,.sidebar  a:focus {
+    color:#c33;
+  } */
+/* .sidebar a::after{
+    color: #00f;
+} */
+
+.content {
+    padding: 3rem;
+    margin-left: 250px;
+}
+
+.content .underLineDash {
+    width: 1000px;
+    /* width: 100%; */
+
+}
+
+
+
+/* finsh dashboard */
+/**************************************************** */
+
+
+
+/* start categories */
+
+main .content .add-cate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* main .content .add-cate h1{
+    border: 2px; 
+   line-height: 10px;
+
+}  */
+
+
+main .content .add-cate a {
+    font-size: 17px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 3px 70px;
+    text-align: center;
+    font-family: var(--cairo-font-);
+    color: #333;
+    font-weight: 400;
+}
+
+main .content .add-cate a:hover {
+    background-color: #333;
+    color: #fff;
+
+}
+
+main .categories-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: 300px;
+    margin-right: 20px;
+    /* gap: 1px solid; */
+}
+
+main .categories-table table {
+    width: 100%;
+    border: #f2f2f2;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+}
+
+main .categories-table table tr:nth-child(even) {
+    background-color: #f2f2f2;
+
+}
+
+main .categories-table table tr td {
+    /* border-bottom:2px solid #f2f2f2; */
+    border: 2px solid #eeececf1;
+}
+
+main .categories-table table tr th {
+    font-weight: 300;
+    font-family: var(--cairo-font-);
+}
+
+main .categories-table table tr .fa-pen-to-square {
+    color: #fff;
+    background-color: rgba(0, 0, 255);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+main .categories-table table tr .fa-trash {
+
+    color: #fff;
+    background-color: rgba(255, 0, 0);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+main .categories-table table tr .fa-trash:hover {
+    color: #f00;
+    background: #fff;
+}
+
+main .categories-table table tr .fa-pen-to-square:hover {
+    color: #00f;
+    background: #fff;
+}
+
+/* finsh categories */
+
+/* start   Add&editNewCategory */
+.AddNewCategory,
+.editNewCategory {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-right: 50px;
+    margin-top: -30px;
+    /* width: 500px; */
+
+}
+
+.AddNewCategory input,
+.editNewCategory input {
+    padding: 0px 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.AddNewCategory button {
+    color: #fff;
+    background: green;
+    padding: 5px 70px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    width: 240px;
+    font-size: 17px;
+
+}
+
+.editNewCategory button {
+    color: #000;
+    background: rgb(51, 157, 255);
+    padding: 5px 70px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    width: 240px;
+    font-size: 17px;
+}
+
+
+
+
+/* finsh Add&editNewCategory */
+
+/* start books-table */
+main .books-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: 300px;
+    margin-right: 20px;
+    /* gap: 1px solid; */
+}
+
+main .books-table table {
+    width: 100%;
+    border: #f2f2f2;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+}
+
+main .books-table table tr:nth-child(even) {
+    background-color: #f2f2f2;
+
+}
+
+main .books-table table tr td {
+    /* border-bottom:2px solid #f2f2f2; */
+    border: 2px solid #eeececf1;
+}
+
+main .books-table table tr th {
+    font-weight: 300;
+    font-family: var(--cairo-font-);
+}
+
+main .books-table table tr .fa-pen-to-square {
+    color: #fff;
+    background-color: rgba(0, 0, 255);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+main .books-table table tr .fa-trash {
+
+    color: #fff;
+    background-color: rgba(255, 0, 0);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+main .books-table table tr .fa-trash:hover {
+    color: #f00;
+    background: #fff;
+}
+
+main .books-table table tr .fa-pen-to-square:hover {
+    color: #00f;
+    background: #fff;
+}
+
+main .books-table table tr td img {
+    width: 70px;
+    height: 80px;
+
+}
+
+
+
+/* finsh books-table */
+
+
+/* start Add&editBook */
+.AddNewBook,
+.editNewBook {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-right: 50px;
+    margin-top: -30px;
+    /* width: 500px; */
+
+}
+
+.AddNewBook input,
+.editNewBook input {
+    padding: 0px 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* .AddNewBook input[type=file] {
+    height: 40px;
+    background-color: transparent;
+}  */
+.AddNewBook textarea,
+.editNewBook textarea {
+    padding: 0px 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+.AddNewBook button,
+.editNewBook button {
+    color: #fff;
+    background: green;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 17px;
+    padding: 10px;
+
+}
+
+/* .editNewBook button{
+    color: #fff;
+    background: green;
+    padding: 5px 70px;
+    border-radius: 5px;   
+    border: none;
+    margin-top: 20px;
+    width: 240px;
+    font-size: 17px;  
+} */
+
+
+
+
+
+
+/* finsh add&editBook */
+
+/* start footer */
+/* .iconSerch{
+    /* width: 200px;
+    height: 100px; */
+/* background-color: #bbb; */
+/* color: aqua; */
+/* } */
+footer {
+    height: 70px;
+    background: rgb(231, 236, 248);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer .copyR {
+    font-family: var(--cairo-font-);
+    font-size: 15px;
+    margin-left: 100px;
+}
+
+footer .copyR a {
+    text-decoration: underline;
+    color: #0e9af7;
+    font-size: 15px;
+
+
+
+}
+
+footer .icon {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    margin-right: 100px;
+    justify-content: space-between;
+}
+
+footer .icon div a {
+    color: #0e9af7;
+}
+
+/* finsh footer */

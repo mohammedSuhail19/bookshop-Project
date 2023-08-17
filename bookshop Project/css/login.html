@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loginForm {
+            display: flex;
+            justify-content: center;
+            /* background: #015f0115; */
+            height: 100vh;
+        }
+
+        .loginForm form {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 400px;
+            /* background: #333; */
+            margin-top: 100px;
+        }
+
+        .loginForm form h3 {
+            font-size: 30px;
+            text-align: center;
+            font-weight: 400;
+            font-family: var(--cairo-font-);
+
+        }
+
+        .loginForm form label {
+            /* padding-left: 30px; */
+            font-size: 20px;
+            font-family: var(--cairo-font-);
+
+        }
+
+        .loginForm form .pass {
+            margin-top: 20px;
+        }
+
+        .loginForm form input {
+            padding-left: 20px;
+            font-size: 20px;
+            font-family: var(--cairo-font-);
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        .loginForm form .submitLogin {
+            margin-top: 30px;
+            background: green;
+            color: #fff;
+        }
+
+        .loginForm form .submitLogin:hover {
+            transition: all .50s;
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="loginForm">
+        <form method="post">
+            <h3 class="addresForm"> Login to your account</h3>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <label for="password" class="pass">Password</label>
+            <input type="password" name="password" id="password" placeholder="password">
+            <input type="submit" class="submitLogin" name="submit" id="">
+        </form>
+    </main>
+
+</body>
+
+</html>
